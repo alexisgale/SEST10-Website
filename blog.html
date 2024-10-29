@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: monospace;
+        background-image: url(assets/banner-bg.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+      /* nav */
+      .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 55px;
+      }
+      .main-nav li {
+        display: inline-block;
+      }
+      .main-nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        position: relative;
+      }
+      .main-nav li a:hover {
+        border-bottom: 1px solid white;
+      }
+      .logo {
+        float: left;
+        margin-top: 30px;
+      }
+      .row {
+        max-width: 1200px;
+        margin: auto;
+      }
+      /* blog */
+      .blog-content {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        animation: fadeIn 1s forwards;
+      }
+      .blog-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .blog-post {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .blog-post h2 {
+        font-size: 24px;
+        color: #333;
+      }
+      .blog-post p {
+        color: #666;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="row">
+      <div class="logo">
+        <img
+          src="assets/logo-new.png"
+          alt="oc_logo"
+          style="height: 75px; width: 260px"
+        />
+      </div>
+      <ul class="main-nav">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">SERVICES</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="#">CONTACT</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Blog -->
+    <div class="blog">
+      <section class="blog-content">
+        <h1>Welcome to Our Blog</h1>
+        <p style="color: white">
+          Discover articles about web development, tips, tutorials, and more!
+        </p>
+        <div class="blog-post">
+          <h2>Getting Started with HTML</h2>
+          <br />
+          <p>
+            Learn the basics of HTML and build the foundation for web
+            development.
+          </p>
+        </div>
+        <div class="blog-post">
+          <h2>Styling with CSS</h2>
+          <br />
+          <p>
+            Discover how to style your websites with CSS and make them look
+            attractive.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
